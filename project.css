@@ -1,0 +1,294 @@
+*{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+body{
+    background-color: ghostwhite;
+}
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.445);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 1000;
+}
+.kafenlogo{
+    width: fit-content;
+    height:fit-content ;
+    margin-left: 50px;
+}
+.pages{
+    display: flex;
+    margin-left: 25px;
+}
+.a{
+    text-decoration:none;
+    color: rgba(0, 0, 0, 0.494);
+     font-size: 15px;
+     font-weight: bold;
+     padding:25px 10px ;
+     cursor: pointer;
+}
+a:active{
+    border-bottom: 2px solid  rgba(3, 173, 99, 0.849);
+    color: rgba(3, 173, 99, 0.849);
+}
+.loginmain{
+    margin-top: 66px;
+    display: flex;
+    justify-content: center;
+}
+.loginform{
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:0 0 5px rgba(128, 128, 128, 0.445);
+    width: 450px;
+    padding: 30px;
+}
+.loginform h1{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.loginform input{
+    width: 100%;
+    display: block;
+    margin-top: 40px;
+    border: none;
+    border-bottom: 2px solid grey;
+    text-decoration: overline;
+    height: 30px;
+}
+.loginform input::placeholder{
+    font-size: 14px;
+    font-weight: 600;
+}
+.loginform input:focus{
+
+    outline: none;
+}
+.loginform button{
+    margin-top: 40px;
+    border-radius: 25px;
+    width: 100%;
+    height: 45px;
+    background-color: rgba(3, 173, 99, 0.849);
+    border:none;
+    color: white;
+    font-size:14px ;
+    font-weight: 600;
+}
+button:hover{
+    cursor: pointer;
+}
+.orderpage{
+    display: flex;
+    flex-direction: column;
+    margin-top:66px;
+    padding: 40px 110px;
+}
+.orderpage h1{
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.orderinner{
+    position: relative;
+}
+.filters{
+    width: 150px;
+    
+}
+.filters h3{
+    font-weight: 900;
+    margin: 20px 0px;
+}
+.filters div{
+    font-weight: 500;
+    display: block;
+    margin-top: 25px;
+}
+.filters input{
+    font-weight: 500;
+}
+.filters label{
+margin-right: 10px;
+}
+.table{
+    position: absolute;
+    left: 150px;
+    top: 20;
+    width: 85%;
+}
+#table-data{
+    position: absolute;
+    /* left: 150px; */
+    top: 60;
+}
+
+table{
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+}
+th{
+    font-weight: 800;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+#logout{
+    height: 20px;
+    width: 50x;
+    border-radius: 5px;
+    margin-left: 60vw;
+}
+#logout:active{
+    border: none;
+}
+.hidden{
+    display: none;
+}
+
+  #table-data {
+    overflow-y: overlay;
+    background-color: white;
+    width: 100%;
+    /* margin-top: 10px; */
+  } 
+  #table-data2 {
+    overflow-y: overlay;
+    background-color: white;
+    width: 100%;
+    /* margin-top: 10px; */
+  } 
+  #table-data3 {
+    overflow-y: overlay;
+    background-color: white;
+    width: 100%;
+    /* margin-top: 10px; */
+  } 
+  #table-data4 {
+    overflow-y: overlay;
+    background-color: white;
+    width: 100%;
+    /* margin-top: 10px; */
+  } 
+ #table-data tr{
+    height: 50px;
+    font-size: 14px;
+  }
+  #table-data2 tr{
+    height: 50px;
+    font-size: 14px;
+  }
+  #table-data3 tr{
+    height: 50px;
+    font-size: 14px;
+  }
+  #table-data4 tr{
+    height: 50px;
+    font-size: 14px;
+  }
+  .column1 {
+    width: 200px;
+    border-bottom: 5px solid ghostwhite;
+    padding: 20px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .column2 {
+    width: 300px;
+    border-bottom: 5px solid ghostwhite;
+    padding-left: 0px;
+  }
+  
+  .column3 {
+    width: 250px;
+    border-bottom: 5px solid ghostwhite;
+    padding-left: 0px;
+  }
+  
+  .column4 {
+    width: 200px;
+    border-bottom: 5px solid ghostwhite;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .column5 {
+    width: 200px;
+    border-bottom: 5px solid ghostwhite;
+    padding-left: 50px;
+  }
+  #searchbox{
+    margin-top: 20px;
+    padding-left: 20px;
+    height: 45px;
+    width: 550px;
+    border: none;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid rgba(3, 173, 99, 0.849);
+    text-decoration: overline;
+  }
+  #searchbox::placeholder{
+    font-size: 15px;
+    font-weight: 600;
+    
+  }
+  #seachbox:focus{
+    outline: none;
+    border: none;
+  }
+  #reset{
+    height: 45px;
+    width: 120px;
+    border-radius: 25px;
+    background-color: rgba(3, 173, 99, 0.849);
+    color: white;
+    margin-left: 30px;
+    border: none;
+    font-size: 14px;
+  }
+  .usertable{
+    margin-top: 40px;
+  }
+  .c1 {
+    width: 100px;
+    border-bottom: 5px solid ghostwhite;
+    padding: 20px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .c2 {
+    width: 200px;
+    border-bottom: 5px solid ghostwhite;
+    padding-left: 0px;
+  }
+  
+  .c3 {
+    width: 250px;
+    border-bottom: 5px solid ghostwhite;
+    padding-left: 50px;
+  }
+  
+  .c4 {
+    width: 180px;
+    border-bottom: 5px solid ghostwhite;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .c5 {
+    width: 250px;
+    border-bottom: 5px solid ghostwhite;
+
+  }
+  .c6 {
+    width: 250px;
+    border-bottom: 5px solid ghostwhite;
+    padding-left: 0px;
+  }
+  #productcount, #ordercount{
+    font-size: 19px;
+  }

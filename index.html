@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="kafenlogo">
+         <img src="https://assets.themuse.com/uploaded/companies/12419/small_logo.png" alt="kafenlogo" width="120" height="40px" >
+        </div>  
+        <div class="pages">
+            <a id="order.html" class="a">Orders</a>
+            <a id="product.html" class="a">Products</a>
+            <a id="users.html" class="a">Users</a>
+        </div>  
+    </header>
+
+    <div class="loginmain" id="loginmain">
+        <div class="loginform">
+            <h1>Sign In</h1>
+            <input type="text" placeholder="Enter Username" id="username" name="username">
+            <input type="password" placeholder="Enter Password" id="password" name="password">
+            <button id="loginbtn">Login</button>
+        </div>
+    </div>
+
+    <div class="orderpage" id="orderpage">
+        <h1>Orders</h1>
+        <div class="orderinner">
+          <div class="filters">
+              <h3>Filters</h3>
+              <div>Count:<span id="ordercount"></span></div>
+              <div>
+                  <div class="ch"><input type="checkbox" id="new" value="New"> <label for="new">New</label></div>
+                  <div class="ch"><input type="checkbox" id="packed" value="Packed"> <label for="packed">Packed</label></div>
+                  <div class="ch"><input type="checkbox" id="intansit" value="InTransit"> <label for="intansit">Intransist</label></div>
+                  <div class="ch"><input type="checkbox" id="delivered" value="Delivered"> <label for="delivered">Delivered</label></div>
+              </div>
+          </div>
+          <div class="table">
+              <table>
+                     <tr>
+                        <th>ID</th>
+                        <th>Customer</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                     </tr>
+              </table>
+              <div id="table-data"></div>
+          </div>
+        </div>
+   </div>
+   <div class="orderpage" id="productpage">
+    <h1>Products</h1>
+    <div class="orderinner">
+      <div class="filters">
+          <h3>Filters</h3>
+          <div>Count:<span id="productcount"></span></div>
+          <div>
+              <div><input type="checkbox" class="checkbox" id="expire" value="expire"> <label for="expire">Expired</label></div>
+              <div><input type="checkbox" class="checkbox" id="lowstock" value="lowstock"> <label for="expire">Low stock</label></div>
+          </div>
+      </div>
+      <div class="table">
+          <table>
+                 <tr>
+                    <th>ID</th>
+                    <th>Product Name</th>
+                    <th>Product Brand</th>
+                    <th>Expire Date</th>
+                    <th>Unit Price</th>
+                    <th>Stock</th>
+                 </tr>
+          </table>
+          <div id="table-data2"></div>
+      </div>
+    </div>
+</div>
+<div class="orderpage" id="userpage">
+    <h1>User</h1>
+      <div>
+        <input type="text" id="searchbox" placeholder="Search by Name">
+        <button id="reset">Reset</button>
+     </div>
+      <div class="usertable">
+          <table>
+                 <tr>
+                    <th>ID</th>
+                    <th>User Avtar</th>
+                    <th>Full Name</th>
+                    <th>Dob</th>
+                    <th>Gender</th>
+                    <th>Current location</th>
+                 </tr>
+          </table>
+          <div id="table-data3"></div>
+          <div id="table-data4"></div>
+      </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+     <script src="project.js"></script>
+</body>
+</html>
